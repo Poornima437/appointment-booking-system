@@ -1,0 +1,301 @@
+
+/* =========================================
+   1. GLOBAL APPLICATION THEME
+========================================= */
+
+.stApp {
+    background-color: #F5F7F4;
+    color: #24382B;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content area */
+
+.block-container {
+    max-width: 1450px;
+    padding: 1.5rem 2rem 3rem;
+}
+
+/* Main headings */
+
+h1, h2, h3 {
+    color: #202820;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+/* Paragraphs and labels */
+
+p, label {
+    color: #34443A;
+}
+
+/* =========================================
+   2. SIDEBAR
+========================================= */
+
+[data-testid="stSidebar"] {
+    background-color: #FFFFFF;
+    border-right: 1px solid #E5EAE6;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #147D61;
+}
+
+/* Sidebar navigation buttons */
+
+[data-testid="stSidebar"] .stButton > button {
+    background-color: transparent;
+    color: #4A554D;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 500;
+}
+
+[data-testid="stSidebar"] .stButton > button:hover {
+    background-color: #E8F7F0;
+    color: #087A59;
+}
+
+/* =========================================
+   3. CARDS AND CONTAINERS
+========================================= */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E5EBE6;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(25, 60, 40, 0.03);
+}
+
+/* Appointment forms */
+
+[data-testid="stForm"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E9E4;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* =========================================
+   4. TEXT INPUTS
+========================================= */
+
+.stTextInput input,
+.stDateInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background-color: #FFFFFF;
+    color: #24382B;
+    border: 1px solid #DCE5DE;
+    border-radius: 8px;
+    min-height: 38px;
+}
+
+/* Input focus */
+
+.stTextInput input:focus,
+.stDateInput input:focus,
+.stNumberInput input:focus,
+.stTextArea textarea:focus {
+    border-color: #10B981;
+    box-shadow: 0 0 0 1px #10B981;
+}
+
+/* Placeholder text */
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #9AA59C;
+}
+
+/* =========================================
+   5. SELECT BOXES
+========================================= */
+
+.stSelectbox [data-baseweb="select"],
+.stMultiSelect [data-baseweb="select"] {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+[data-baseweb="select"] > div {
+    border-color: #DCE5DE;
+    border-radius: 8px;
+}
+
+/* =========================================
+   6. PRIMARY AND SECONDARY BUTTONS
+========================================= */
+
+.stButton > button,
+.stFormSubmitButton > button {
+    background-color: #10B981;
+    color: #FFFFFF;
+    border: 1px solid #10B981;
+    border-radius: 8px;
+    min-height: 40px;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background-color: #0D9468;
+    color: #FFFFFF;
+    border-color: #0D9468;
+}
+
+/* Keyboard focus */
+
+.stButton > button:focus-visible,
+.stFormSubmitButton > button:focus-visible {
+    outline: 2px solid #087A59;
+    outline-offset: 2px;
+}
+
+/* =========================================
+   7. DASHBOARD METRIC CARDS
+========================================= */
+
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E3EAE4;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #657168;
+    font-size: 0.9rem;
+}
+
+[data-testid="stMetricValue"] {
+    color: #147D61;
+    font-weight: 700;
+}
+
+/* =========================================
+   8. SUCCESS, WARNING AND ERROR MESSAGES
+========================================= */
+
+[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+/* =========================================
+   9. TOP-RIGHT TOAST NOTIFICATIONS
+========================================= */
+
+/* Green notification background */
+
+[data-testid="stToast"] {
+    background-color: #E6F4EA !important;
+    border: 1px solid #28794B !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(20, 70, 40, 0.12);
+}
+
+/* Toast text */
+
+[data-testid="stToast"] [data-testid="stMarkdownContainer"] {
+    color: #1E5F39 !important;
+    font-weight: 600;
+}
+
+/* =========================================
+   10. CHAT ASSISTANT
+========================================= */
+
+[data-testid="stChatMessage"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E0EAE1;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+/* Chat input container */
+
+[data-testid="stChatInput"] {
+    border-radius: 12px;
+}
+
+/* Chat input field */
+
+[data-testid="stChatInput"] textarea {
+    background-color: #FFFFFF;
+    color: #24382B;
+}
+
+/* =========================================
+   11. DIVIDERS
+========================================= */
+
+hr {
+    border-color: #E1E8E2;
+}
+
+/* =========================================
+   12. DATA TABLES
+========================================= */
+
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    border: 1px solid #E3EAE4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* =========================================
+   13. DATE PICKER
+========================================= */
+
+[data-baseweb="calendar"] {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* =========================================
+   14. RESPONSIVE LAYOUT
+========================================= */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem 0.8rem 2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        padding: 8px;
+    }
+
+    [data-testid="stForm"] {
+        padding: 12px;
+    }
+}
